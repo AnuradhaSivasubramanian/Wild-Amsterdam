@@ -2,44 +2,88 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.menulinks {
-  display: none;
+/*display*/
+/*position fixed*/
+
+.positionfixed {
+  z-index: 3;
+  position: fixed;
+  overflow: hidden;
 }
+/*menu link*/
+
+.menulinks {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #f76c6c;
+  z-index: 2;
+  padding-top: 20vh;
+  padding-left: 10vh;
+  visibility: hidden;
+}
+
+.menulinks a {
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+}
+
+.menulinks a:hover {
+  color: #184288;
+  margin-left: 15vh;
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+/*general classes*/
+
 .color_pink {
   color: #f76c6c;
 }
+.bold {
+  font-weight: 700;
+}
+
+/*header*/
 .wild_amsterdam {
-  font-size: 6em;
+  font-size: 7em;
   font-weight: 700;
   color: white;
   margin-top: 20%;
 }
 
-.jumbotron {
-  background-image: url("https://images.pexels.com/photos/347254/pexels-photo-347254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+.main_image {
+  background-image: url("/jumbotron\ img.jpg");
+  background-color: #184188c9 !important;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   text-align: center;
-}
-.positionfixed {
-  position: fixed;
+  background-blend-mode: multiply;
+  z-index: 1;
 }
 
+/*contact us*/
+#font_size_15px {
+  font-size: 15px;
+}
 .contact_us {
-  margin-top: 75px;
+  margin-top: 20vh;
   margin-bottom: 40px;
   color: black;
+  height: 90vh;
+}
+.contact_us h2 {
+  font-size: 50px;
 }
 .col-8 {
   justify-content: center;
 }
-.bold {
-  font-weight: 700;
-}
+
 input {
-  width: 500px;
-  height: 40px;
+  width: 100vh;
+  height: 10vh;
   background-color: rgba(243, 192, 192, 0.3);
   border-radius: 5px;
   display: block;
@@ -54,8 +98,8 @@ input {
 }
 
 .message {
-  width: 500px;
-  height: 100px;
+  width: 100vh;
+  height: 30vh;
   background-color: rgba(243, 192, 192, 0.3);
 }
 .submit {
@@ -64,16 +108,43 @@ input {
   background-color: #f76c6c;
   width: 180px;
 }
+.submit:hover {
+  transform: rotate(-0.5deg) scale(1.08, 1.05);
+  transition: all 0.15s;
+}
 
+/* footer*/
 footer {
-  background-color: #184288;
-  color: white;
-  height: 250px;
-  padding-left: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-color: #03205a;
+  height: 60vh;
+  position: relative;
+  
+}
+.footer_container{
+  width: 100%;
+  padding-top: 15vh;
+  display:flex;
+  justify-content: space-around;
+
+}
+.footer_wcs_one {
+  color: #ffffff;
+  display: block;
+  
+}
+.footer_wcs_one p {
+  font-size: 0.9rem;
+}
+.footer_wcs_one span {
+  font-size: 0.9rem;
+}
+.footer_wcs_one p:nth-child(1) {
+  font-size: 2rem;
+}
+.footer img {
+  width: 10vh;
+  height: 10vh;
+  max-width: 90px;
+  float: right;
 }
 
-footer a {
-  color: #f76c6c;
-}

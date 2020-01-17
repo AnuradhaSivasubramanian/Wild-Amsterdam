@@ -32,39 +32,67 @@
             <div class="offset-10"></div>
 
             <div class="col-1">
-              <div class="menulinks">
-                <p><a href="">Places</a></p>
-                <p><a href=""> Transport </a></p>
-                <p><a href="">About us</a></p>
-                <p><a href=""> Contact us</a></p>
-              </div>
-              <img
+                <img
                 src="https://via.placeholder.com/50"
                 alt="hamburguermenu"
-                class="positionfixed"
-              />
+                class="positionfixed" onclick="myFunction()"
+              /> 
+            </div>
+          </div>
+          <div class="displaynone">
+          <div class="row menulinks" id="menulinks">
+            <div class=" col">
+              <p><a href="">Places</a></p>
+              <p><a href=""> Transport </a></p>
+              <p><a href="">About us</a></p>
+              <p><a href=""> Contact us</a></p>
+            </div>
             </div>
           </div>
         </div>
       </nav>
-      <div class="jumbotron">
+      <div class="jumbotron main_image">
         <h1 class="wild_amsterdam">
           <span class="color_pink">Wild</span> Amsterdam
         </h1>
       </div>
     </header>
     <section class="News">
-      <h2>News</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <img src="https://via.placeholder.com/100" alt="place_one" />
+      <h2 class="color_white bold">News</h2>
+      <div class="displayflex">
+        <div class="one  ">
+          <div class="polaroid">
+            <img
+              src="https://images.pexels.com/photos/1398003/pexels-photo-1398003.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="place_one"
+              class="fotos"
+              id="places"
+            />
+            <h3>Places</h3>
           </div>
-          <div class="col-4">
-            <img src="https://via.placeholder.com/100" alt="place_two" />
+        </div>
+
+        <div class="twoo">
+          <div class="polaroid">
+            <img
+              src="https://images.pexels.com/photos/1398003/pexels-photo-1398003.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="place_two"
+              class="fotos"
+              id="transport"
+            />
+            <h3>Transport</h3>
           </div>
-          <div class="col-4">
-            <img src="https://via.placeholder.com/100" alt="place_two" />
+        </div>
+
+        <div class="three  ">
+          <div class="polaroid">
+            <img
+              src="https://images.pexels.com/photos/1398003/pexels-photo-1398003.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="place_two"
+              class="fotos"
+              id="About_Us"
+            />
+            <h3>About us</h3>
           </div>
         </div>
       </div>
@@ -72,11 +100,6 @@
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155959.7648076958!2d4.903960400000002!3d52.35461899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1snl!2snl!4v1579169691979!5m2!1snl!2snl"
-        width="600"
-        height="450"
-        frameborder="0"
-        style="border:0;"
-        allowfullscreen=""
       ></iframe>
     </div>
     <section class="contact_us">
@@ -88,7 +111,9 @@
 
           <div class="col-8">
             <form>
-              <p class="color_pink bold">Contact Wild Amsterdam</p>
+              <p class="color_pink bold" id="font_size_15px">
+                Contact Wild Amsterdam
+              </p>
               <input class="your_name" type="text" placeholder="Your Name" />
               <input class="email" type="email" placeholder="Your Email" />
               <textarea class="message" placeholder="Your Message"></textarea>
@@ -99,16 +124,33 @@
       </div>
     </section>
     <footer>
-      <div class="footer_wcs">
-        <p class="color_pink bold">Contact</p>
+      <div class="footer_container">
+      <div class = "footer_wcs_one">
+        <p class="color_pink">Contact</p>
         <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
-        <p>+33 09 72 52 63 94</p>
-        <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
+        <span class="color_pink">T </span><span>+33 09 72 52 63 94</span>
+         <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
+        </div>
+        
+        <div class = "footer_wcs_two">
+        <img src="/logo.png" alt="logo">
       </div>
-      <div class="footer_imprint">
-        <a href="#">Imprint</a>
+      
       </div>
-    </footer>
+</footer>
+<script>
+function myFunction() {
+  var x= document.getElementById("menulinks");
+  if (x.style.visibility === "hidden") {
+    x.style.visibility = "visible";
+  }
+  else {
+    x.style.visibility ="hidden";
+  }
+  }
+ 
+</script>
+
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
