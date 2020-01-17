@@ -18,19 +18,22 @@
   padding-bottom: 15px;
 }
 .main_image {
-    background-image: url("/jumbotron\ img.jpg");
-    background-color: #184188c9 !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    text-align: center;
-    background-blend-mode: multiply;
-  }
-.color_white {
-  color: white;
-  font-size: 40px;
+  background-image: url("/jumbotron\ img.jpg");
+  background-color: #184188c9 !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  background-blend-mode: multiply;
+}
+.color_blue {
+  color: #184188c9;
+  font-size: 5em;
 
   margin-bottom: 30px;
+}
+.color_blue span{
+  text-decoration: underline #184188c9;
 }
 
 .fotos {
@@ -51,7 +54,7 @@
   overflow: hidden;
   width: 40vh;
   height: 50vh;
-  background: #fff;
+  background: rgba(224, 222, 222, 0.849);
   padding-top: 2rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
 }
@@ -64,6 +67,7 @@
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transition: all 0.5s;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
 }
 .polaroid h3 {
   color: #f76c6c;

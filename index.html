@@ -32,21 +32,22 @@
             <div class="offset-10"></div>
 
             <div class="col-1">
-                <img
+              <img
                 src="https://via.placeholder.com/50"
                 alt="hamburguermenu"
-                class="positionfixed" onclick="myFunction()"
-              /> 
+                class="positionfixed"
+                onclick="myFunction()"
+              />
             </div>
           </div>
           <div class="displaynone">
-          <div class="row menulinks" id="menulinks">
-            <div class=" col">
-              <p><a href="">Places</a></p>
-              <p><a href=""> Transport </a></p>
-              <p><a href="">About us</a></p>
-              <p><a href=""> Contact us</a></p>
-            </div>
+            <div class="row menulinks" id="menulinks">
+              <div class=" col">
+                <p><a href="">Places</a></p>
+                <p><a href=""> Transport </a></p>
+                <p><a href="">About us</a></p>
+                <p><a href=""> Contact us</a></p>
+              </div>
             </div>
           </div>
         </div>
@@ -58,7 +59,7 @@
       </div>
     </header>
     <section class="News">
-      <h2 class="color_white bold">News</h2>
+      <h2 class="color_blue bold"><span>N</span>ews</h2>
       <div class="displayflex">
         <div class="one  ">
           <div class="polaroid">
@@ -125,32 +126,29 @@
     </section>
     <footer>
       <div class="footer_container">
-      <div class = "footer_wcs_one">
-        <p class="color_pink">Contact</p>
-        <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
-        <span class="color_pink">T </span><span>+33 09 72 52 63 94</span>
-         <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
-        </div>
-        
-        <div class = "footer_wcs_two">
-        <img src="/logo.png" alt="logo">
-      </div>
-      
-      </div>
-</footer>
-<script>
-function myFunction() {
-  var x= document.getElementById("menulinks");
-  if (x.style.visibility === "hidden") {
-    x.style.visibility = "visible";
-  }
-  else {
-    x.style.visibility ="hidden";
-  }
-  }
- 
-</script>
+        <div class="footer_wcs_one">
+          <p class="color_pink">Contact</p>
+          <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
 
+          <p><span class="color_pink">T </span>+33 09 72 52 63 94</p>
+        </div>
+
+        <div class="footer_wcs_two">
+          <img src="/logo.png" alt="logo" />
+          <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menulinks");
+        if (x.style.visibility === "hidden") {
+          x.style.visibility = "visible";
+        } else {
+          x.style.visibility = "hidden";
+        }
+      }
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
