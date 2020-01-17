@@ -1,4 +1,80 @@
+.News {
+  background-image: linear-gradient(
+    -90deg,
+    #184188b9,
+    #f76c6c,
+    #f76c6c,
+    #f76c6c,
+    #f76c6c,
+    #f76c6c,
+    #f76c6c,
+    #184188b9
+  );
+  width: 100%;
+  height: 90vh;
+  margin-top: -35px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.main_image {
+    background-image: url("/jumbotron\ img.jpg");
+    background-color: #184188c9 !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    background-blend-mode: multiply;
+  }
+.color_white {
+  color: white;
+  font-size: 40px;
 
+  margin-bottom: 30px;
+}
 
+.fotos {
+  width: 35vh;
+  height: 35vh;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.displayflex {
+  display: inline-flex;
+  justify-content: space-around;
+  margin-left: 10px;
+  height: 100%;
+}
+.polaroid {
+  margin-top: 5vh;
+  margin-left: 3vh;
+  overflow: hidden;
+  width: 40vh;
+  height: 50vh;
+  background: #fff;
+  padding-top: 2rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+}
 
-
+.polaroid:hover {
+  transform: scale(1.07, 1.07);
+  transition: all 0.5s;
+}
+.polaroid:hover .fotos {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: all 0.5s;
+}
+.polaroid h3 {
+  color: #f76c6c;
+  font-size: 25px;
+  margin-top: 2vh;
+}
+.map {
+  background-color: #184288;
+  height: 90vh;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
