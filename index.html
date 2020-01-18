@@ -26,8 +26,11 @@
           <div class="row">
             <div class="col-1">
               <figure class="positionfixed">
+                <a href="/index.html">
                 <img src="https://via.placeholder.com/50" alt="Logo" />
-              </figure>
+              
+              </a>
+            </figure>
             </div>
             <div class="offset-10"></div>
 
@@ -35,7 +38,7 @@
               <img
                 src="https://via.placeholder.com/50"
                 alt="hamburguermenu"
-                class="positionfixed"
+                class="positionabsolute"
                 onclick="myFunction()"
               />
             </div>
@@ -43,59 +46,70 @@
           <div class="displaynone">
             <div class="row menulinks" id="menulinks">
               <div class=" col">
-                <p><a href="">Places</a></p>
-                <p><a href=""> Transport </a></p>
-                <p><a href="">About us</a></p>
-                <p><a href=""> Contact us</a></p>
+                <p><a href="/index.html">Home</a></p>
+                <p><a href="/move.html">How to move</a></p>
+                
+                <p><a href="/places.html">Places to go</a></p>
+                
+                <p><a href="/aboutus.html">About us</a></p>
+                <p><a href="#contactus">Contact us</a></p>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <div class="jumbotron main_image">
+      <div class="jumbotron main_image" id="top">
         <h1 class="wild_amsterdam">
           <span class="color_pink">Wild</span> Amsterdam
         </h1>
       </div>
     </header>
-    <section class="News">
-      <h2 class="color_blue bold"><span>N</span>ews</h2>
+    <section class="News container-fluid">
+          
+      <h2 class="what_is_on"> What'<span class="color_blue">s </span> on </h2>
       <div class="displayflex">
-        <div class="one  ">
+          <div class="one  ">
+          <a href="/places.html">
           <div class="polaroid">
             <img
-              src="https://images.pexels.com/photos/1398003/pexels-photo-1398003.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              src="/photos/MolenSmall (2).jpg"
               alt="place_one"
               class="fotos"
               id="places"
             />
-            <h3>Places</h3>
+            <p class=" text_inside_polaroid">Wind<span class="color_pink">mills</span></p>
           </div>
+        
+      </a>
         </div>
+     
 
-        <div class="twoo">
+        <div class="two">
+          <a href="/move.html">
           <div class="polaroid">
-            <img
-              src="https://images.pexels.com/photos/1398003/pexels-photo-1398003.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt="place_two"
-              class="fotos"
-              id="transport"
-            />
-            <h3>Transport</h3>
+            <img src="/photos/bike.jpg" alt="place_two" class="fotos" id="transport" />
+            <p class=" text_inside_polaroid">How<span class="color_pink">to</span>Move</p>
           </div>
+        </a>
         </div>
+      
 
+         
         <div class="three  ">
+          <a href="/places.html">
           <div class="polaroid">
             <img
-              src="https://images.pexels.com/photos/1398003/pexels-photo-1398003.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              src="/photos/Bloememmarketsmall.jpg"
               alt="place_two"
               class="fotos"
               id="About_Us"
             />
-            <h3>About us</h3>
+            <p class=" text_inside_polaroid">Bloemen<span class="color_pink">Market</span></p>
           </div>
-        </div>
+                </a>
+          </div>
+                
+      
       </div>
     </section>
     <div class="map">
@@ -103,12 +117,13 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155959.7648076958!2d4.903960400000002!3d52.35461899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1snl!2snl!4v1579169691979!5m2!1snl!2snl"
       ></iframe>
     </div>
-    <section class="contact_us">
+    <section class="contact_us" id="contactus">
       <div class="container-fluid">
         <div class="row">
           <div class="col-4">
-            <h2 class="color_pink">Contact Us</h2>
+            <h2 class="color_pink" id="contactus_tittle">Contact Us</h2>
           </div>
+          
 
           <div class="col-8">
             <form>
@@ -122,6 +137,19 @@
             </form>
           </div>
         </div>
+          <div class="row">
+            <div class="offset-11"></div>
+            <div class="col-1">
+              <a href="#top"  class="glyphicon glyphicon-chevron-up" id="decoration_none">
+              <div class="button_top">
+                <p>Top</p>
+              </div>
+              </a>
+
+            </div>
+          </div>
+                     
+        
       </div>
     </section>
     <footer>
@@ -134,22 +162,12 @@
         </div>
 
         <div class="footer_wcs_two">
-          <img src="/logo.png" alt="logo" />
+          <img src="/photos/logo.png" alt="logo" />
           <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
         </div>
       </div>
     </footer>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("menulinks");
-        if (x.style.visibility === "hidden") {
-          x.style.visibility = "visible";
-        } else {
-          x.style.visibility = "hidden";
-        }
-      }
-    </script>
-
+    <script src="/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
