@@ -89,19 +89,8 @@ body {
   margin-top: 20%;
 }
 
-.main_image {
-  background-image: url("/jumbotron\ img.jpg");
-  background-color: #184188c9 !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  background-blend-mode: multiply;
-  z-index: 1;
-}
-
 /*contact us*/
+
 #font_size_15px {
   font-size: 15px;
 }
@@ -146,7 +135,7 @@ input {
 .submit {
   font-size: 1.5em;
   color: white;
-  text-transform: bold;
+  font-weight: 700;
   background-color: #f76c6c;
   width: 180px;
 }
