@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link
@@ -16,80 +21,153 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="container">
+      <nav >
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-4">
-              <figure>
+            <div class="col-1">
+              <figure class="positionfixed">
+                <a href="/index.html">
                 <img src="https://via.placeholder.com/50" alt="Logo" />
-              </figure>
+              
+              </a>
+            </figure>
             </div>
-            <div class="col-4">
-              <div class="menulinks">
-                <p><a href="">Places</a></p>
-                <p><a href=""> Transport </a></p>
-                <p><a href="">About us</a></p>
-                <p><a href=""> Contact us</a></p>
+            <div class="offset-10"></div>
+
+            <div class="col-1">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="hamburguermenu"
+                class="positionabsolute pointer"
+                onclick="myFunction()"
+              />
+            </div>
+          </div>
+          <div class="displaynone">
+            <div class="row menulinks" id="menulinks">
+              <div class=" col">
+                <p><a href="/index.html">Home</a></p>
+                <p><a href="/move.html">How to move</a></p>
+                
+                <p><a href="/places.html">Places to go</a></p>
+                
+                <p><a href="/aboutus.html">About us</a></p>
+                <p><a href="#contactus">Contact us</a></p>
               </div>
-            </div>
-            <div class="col-4">
-              <img src="https://via.placeholder.com/50" alt="hamburguermenu" />
             </div>
           </div>
         </div>
       </nav>
-      <div class="jumbotron">
-        <h1>Wild Amsterdam</h1>
+      <div class="jumbotron main_image" id="top">
+        <h1 class="wild_amsterdam">
+          <span class="color_pink">Wild</span> Amsterdam
+        </h1>
       </div>
     </header>
-    <section class="News">
-      <h2>News</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <img src="https://via.placeholder.com/100" alt="place_one" />
+    <section class="News container-fluid">
+          
+      <h2 class="what_is_on"> What'<span class="color_blue">s </span> on </h2>
+      <div class="displayflex">
+          
+          <a href="/places.html">
+          <div class="polaroid">
+            <img
+              src="/photos/MolenSmall (2).jpg"
+              alt="place_one"
+              class="fotos"
+              id="places"
+            />
+            <p class=" text_inside_polaroid">Wind<span class="color_pink">mills</span></p>
           </div>
-          <div class="col-4">
-            <img src="https://via.placeholder.com/100" alt="place_two" />
+        
+      </a>
+        
+     
+
+        
+          <a href="/move.html">
+          <div class="polaroid">
+            <img src="/photos/bike.jpg" alt="place_two" class="fotos" id="transport" />
+            <p class=" text_inside_polaroid">How<span class="color_pink">to</span>Move</p>
           </div>
-          <div class="col-4">
-            <img src="https://via.placeholder.com/100" alt="place_two" />
+        </a>
+        
+      
+
+         
+        
+          <a href="/places.html">
+          <div class="polaroid">
+            <img
+              src="/photos/Bloememmarketsmall.jpg"
+              alt="place_two"
+              class="fotos"
+              id="About_Us"
+            />
+            <p class=" text_inside_polaroid">Bloemen<span class="color_pink">Market</span></p>
           </div>
-        </div>
+                </a>
+          
+                
+      
       </div>
     </section>
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155959.7648076958!2d4.903960400000002!3d52.35461899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1snl!2snl!4v1579169691979!5m2!1snl!2snl"
-        width="600"
-        height="450"
-        frameborder="0"
-        style="border:0;"
-        allowfullscreen=""
       ></iframe>
     </div>
-    <section class="contactus">
-      <h2>Contact Us</h2>
-      <form>
-        <input class="your_name" type="text" placeholder="Your Name" /><br />
-        <input class="email" type="email" placeholder="Your Email" /><br />
-        <textarea class="message" placeholder="Your Message"></textarea> <br />
-        <br />
-        <input class="submit" type="submit" />
-      </form>
+    <section class="contact_us" id="contactus">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <h2 class="color_pink" id="contactus_tittle">Contact Us</h2>
+          </div>
+          
+
+          <div class="col-8">
+            <form>
+              <p class="color_pink bold" id="font_size_15px">
+                Contact Wild Amsterdam
+              </p>
+              <input class="your_name" type="text" placeholder="Your Name" />
+              <input class="email" type="email" placeholder="Your Email" />
+              <textarea class="message" placeholder="Your Message"></textarea>
+              <input class="submit bold" type="submit" />
+            </form>
+          </div>
+        </div>
+          <div class="row">
+            <div class="offset-11"></div>
+            <div class="col-1">
+              <a href="#top"  class="glyphicon glyphicon-chevron-up" id="decoration_none">
+              <div class="button_top">
+                <p>Top</p>
+              </div>
+              </a>
+
+            </div>
+          </div>
+                     
+        
+      </div>
     </section>
     <footer>
-      <div class="footer_wcs">
-        <p class="pink">Contact</p>
-        <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
-        <p>+33 09 72 52 63 94</p>
-        <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
-      </div>
-      <div class="footer_imprint">
-        <a href="#">Imprint</a>
+      <div class="footer_container">
+        <div class="footer_wcs_one">
+          <p class="color_pink">Contact</p>
+          <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
+
+          <p><span class="color_pink">T </span>+33 09 72 52 63 94</p>
+        </div>
+
+        <div class="footer_wcs_two">
+          <img src="/photos/logo.png" alt="logo" />
+          <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
+        </div>
       </div>
     </footer>
-
+    <script src="/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
