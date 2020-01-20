@@ -5,94 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+
     <title>Wild Amsterdam</title>
     <link rel="stylesheet" type="text/css" href="style_move.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="container">
+      <nav class="displaynone">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-4">
-              <figure>
+            <div class="col-1">
+              <figure class="positionfixed">
                 <img src="https://via.placeholder.com/50" alt="Logo" />
               </figure>
             </div>
-            <div class="col-4">
-              <div class="menulinks">
+            <div class="offset-10"></div>
+
+            <div class="col-1">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="hamburguermenu"
+                class="positionfixed"
+                onclick="myFunction()"
+              />
+            </div>
+          </div>
+          <div class="displaynone">
+            <div class="row menulinks" id="menulinks">
+              <div class=" col">
                 <p><a href="">Places</a></p>
                 <p><a href=""> Transport </a></p>
                 <p><a href="">About us</a></p>
                 <p><a href=""> Contact us</a></p>
               </div>
             </div>
-            <div class="col-4">
-              <img src="https://via.placeholder.com/50" alt="hamburguermenu" />
-            </div>
           </div>
         </div>
       </nav>
-      <div class="jumbotron">
-        <h1>Wild Amsterdam</h1>
+      <div class="jumbotron main_image">
+        <h1 class="wild_amsterdam">
+          <span class="color_pink">How </span>to move
+        </h1>
       </div>
     </header>
-    <section class="move_section">
-      <div class="bike_section">
-        <h3>By Bike</h3>
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Amsterdam Bike"
-          class="blog_photo"
-        />
-        <p class="photo_desc">
+    <section class="move_section container">
+      <div class="row ">
+        <div class="bike_section col-4 offset-3 ">
+          <h3 class="h3_class">By Bike</h3>
+          <img src="photos/bike.jpg" alt="Amsterdam Bike" class="blog_photo1" />
+          <p class="photo_desc1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <div class="tram_section col-4 offset-3 ">
+        <h3 class="h3_class">By Tram</h3>
+        <img src="photos/tram.jpg" alt="Amsterdam Tram" class="blog_photo2" />
+        <p class="photo_desc2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
       </div>
-      <div class="tram_section">
-        <h3>By Tram</h3>
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Amsterdam Tram"
-          class="blog_photo"
-        />
-        <p class="photo_desc">
+      <div class="boat_section col-4 offset-3 ">
+        <h3 class="h3_class">By Boat</h3>
+        <img src="photos/boat.jpg" alt="Amsterdam Boat" class="blog_photo3" />
+        <p class="photo_desc3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
       </div>
-      <div class="boat_section">
-        <h3>By Boat</h3>
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Amsterdam Boat"
-          class="blog_photo"
-        />
-        <p class="photo_desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-      <div class="bus_section">
-        <h3>By Bus</h3>
-        <img
-          src="https://via.placeholder.com/150"
-          alt="Amsterdam Bus"
-          class="blog_photo"
-        />
-        <p class="photo_desc">
+      <div class="bus_section col-4 offset-3 ">
+        <h3 class="h3_class">By Bus</h3>
+        <img src="photos/bus.jpg" alt="Amsterdam Bus" class="blog_photo4" />
+        <p class="photo_desc4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -100,27 +103,49 @@
         </p>
       </div>
     </section>
-    <section class="contactus">
-      <h2>Contact Us</h2>
-      <form>
-        <input class="your_name" type="text" placeholder="Your Name" /><br />
-        <input class="email" type="email" placeholder="Your Email" /><br />
-        <textarea class="message" placeholder="Your Message"></textarea> <br />
-        <br />
-        <input class="submit" type="submit" />
-      </form>
+    <section class="contact_us">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <h2 class="color_pink">Contact Us</h2>
+          </div>
+
+          <div class="col-8">
+            <form>
+              <p class="color_pink bold">Contact Wild Amsterdam</p>
+              <input class="your_name" type="text" placeholder="Your Name" />
+              <input class="email" type="email" placeholder="Your Email" />
+              <textarea class="message" placeholder="Your Message"></textarea>
+              <input class="submit bold" type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
-      <div class="footer_wcs">
-        <p class="pink">Contact</p>
-        <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
-        <p>+33 09 72 52 63 94</p>
-        <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
-      </div>
-      <div class="footer_imprint">
-        <a href="#">Imprint</a>
+      <div class="footer_container">
+        <div class="footer_wcs_one">
+          <p class="color_pink">Contact</p>
+          <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
+          <span class="color_pink">T </span><span>+33 09 72 52 63 94</span>
+          <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
+        </div>
+
+        <div class="footer_wcs_two">
+          <img src="/logo.png" alt="logo" />
+        </div>
       </div>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menulinks");
+        if (x.style.visibility === "hidden") {
+          x.style.visibility = "visible";
+        } else {
+          x.style.visibility = "hidden";
+        }
+      }
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
