@@ -1,10 +1,32 @@
+/*media queries*/
+/*Iphone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+/* ----------- Apple Watch ----------- */
+@media (max-device-width: 42mm) and (min-device-width: 38mm) {
+}
+/*Ipad*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+}
+/*Laptops*/
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+}
+
 .main_image {
   background-image: url("/photos/jumbotron\ img.jpg");
   background-color: #184188c9 !important;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  width:100%;
   background-blend-mode: multiply;
+  
 }
 .News {
   background-image: linear-gradient(
@@ -31,12 +53,12 @@
   font-family: "Poppins", sans-serif;
   font-size: 4.5em;
   justify-content: left;
-  color: rgba(255, 255, 255, 0.790);
+  color: rgba(255, 255, 255, 0.79);
 }
 
 .displayflex {
   display: flex;
-  justify-content: center !IMPORTANT;
+  justify-content: center !important;
   margin-left: 10px;
   height: 100%;
 }
@@ -50,6 +72,7 @@
   background: rgba(224, 222, 222, 0.849);
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
 }
+
 .fotos {
   margin-top: 1.5rem;
   width: 48vh;
