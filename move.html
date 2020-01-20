@@ -31,24 +31,29 @@
             <div class="offset-10"></div>
 
             <div class="col-1">
-              <div class="menulinks">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="hamburguermenu"
+                class="positionfixed"
+                onclick="myFunction()"
+              />
+            </div>
+          </div>
+          <div class="displaynone">
+            <div class="row menulinks" id="menulinks">
+              <div class=" col">
                 <p><a href="">Places</a></p>
                 <p><a href=""> Transport </a></p>
                 <p><a href="">About us</a></p>
                 <p><a href=""> Contact us</a></p>
               </div>
-              <img
-                src="https://via.placeholder.com/50"
-                alt="hamburguermenu"
-                class="positionfixed"
-              />
             </div>
           </div>
         </div>
       </nav>
-      <div class="jumbotron">
+      <div class="jumbotron main_image">
         <h1 class="wild_amsterdam">
-          <span class="color_pink">Wild</span> Amsterdam
+          <span class="color_pink">How </span>to move
         </h1>
       </div>
     </header>
@@ -116,16 +121,29 @@
       </div>
     </section>
     <footer>
-      <div class="footer_wcs">
-        <p class="color_pink bold">Contact</p>
-        <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
-        <p>+33 09 72 52 63 94</p>
-        <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
-      </div>
-      <div class="footer_imprint">
-        <a href="#">Imprint</a>
+      <div class="footer_container">
+        <div class="footer_wcs_one">
+          <p class="color_pink">Contact</p>
+          <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
+          <span class="color_pink">T </span><span>+33 09 72 52 63 94</span>
+          <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
+        </div>
+
+        <div class="footer_wcs_two">
+          <img src="/logo.png" alt="logo" />
+        </div>
       </div>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menulinks");
+        if (x.style.visibility === "hidden") {
+          x.style.visibility = "visible";
+        } else {
+          x.style.visibility = "hidden";
+        }
+      }
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
