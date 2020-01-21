@@ -19,49 +19,51 @@
     />
   </head>
   
-    <header>
-      <nav>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-1">
-              <figure class="positionfixed">
-                <a href="/index.html">
-                  <img src="https://via.placeholder.com/50" alt="Logo" />
-                </a>
-              </figure>
-            </div>
-            <div class="offset-10"></div>
-
-            <div class="col-1">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="hamburguermenu"
-                class="positionabsolute pointer"
-                onclick="myFunction()"
-              />
-            </div>
-          </div>
-          <div class="displaynone">
-            <div class="row menulinks" id="menulinks">
-              <div class=" col">
-                <p><a href="/index.html">Home</a></p>
-                <p><a href="/move.html">How to move</a></p>
-
-                <p><a href="/places.html">Places to go</a></p>
-
-                <p><a href="/aboutus.html">About us</a></p>
-                <p><a href="#contactus">Contact us</a></p>
-              </div>
-            </div>
+  <header>
+    <nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2 col-md-1 offset-10 offset-md-11">
+            <figure class="positionfixed">
+              <a href="/index.html" class="logo bold" id="logo">
+                <span class="color_pink ">w</span><span>a</span>
+              </a>
+            </figure>
           </div>
         </div>
-      </nav>
-      <div class="jumbotron main_page" id="top">
-        <h1 class="wild_amsterdam">
-          <span class="color_blue">Places</span> to go
-        </h1>
+
+        <div class="row">
+          <div class="col-2 col-md-1 offset-10 offset-md-11">
+            <div class="positionabsolute" onclick="myFunction()">
+              <input type="checkbox" id="input_checkbox" />
+              <span class="menuToggle"></span>
+              <span class="menuToggle"></span>
+              <span class="menuToggle"></span>
+            </div>
+         </div>
+        </div>
+        
+          <div class="row menulinks" id="menulinks">
+            <div class=" col">
+              <p><a href="/index.html">Home</a></p>
+              <p><a href="/move.html">How to move</a></p>
+
+              <p><a href="/places.html">Places to go</a></p>
+
+              <p><a href="/aboutus.html">About us</a></p>
+              <p><a href="#contactus">Contact us</a></p>
+            </div>
+          </div>
+        
       </div>
-    </header>
+    </nav>
+    <div class="jumbotron main_image" id="top">
+        
+      <h1 class="wild_amsterdam">
+        <span class="color_blue">Places</span> to go
+      </h1>
+    </div>
+  </header>
     <section class="placetogo containerr-fluid">
       
       <div>
@@ -137,13 +139,13 @@
     </div>
     </section>
     <section class="contact_us" id="contactus">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-4">
-            <h2 class="color_pink" id="contactus_tittle">Contact Us</h2>
-          </div>
+          
+            <h2 class="color_pink col-sm-8 col-md-3" id="contactus_tittle">Contact Us</h2>
+         
 
-          <div class="col-8">
+          <div class="col-sm-9 col-md-8">
             <form>
               <p class="color_pink bold  col" id="font_size_15px">
                 Contact Wild Amsterdam
@@ -164,21 +166,19 @@
             </form>
           </div>
         </div>
-        <div class="row">
-          <div class="offset-11"></div>
-          <div class="col-1">
-            <a
-              href="#top"
-              class="glyphicon glyphicon-chevron-up"
-              id="decoration_none"
-            >
-              <div class="button_top">
-                <p>Top</p>
-              </div>
-            </a>
-          </div>
+        <div class="button_top">
+          <a
+            href="#top"
+            class="glyphicon glyphicon-chevron-up"
+            id="decoration_none"
+          >
+           
+              <p>Top</p>
+            
+          </a>
         </div>
-      </div>
+        </div>
+     
     </section>
     <footer>
       <div class="footer_container">
@@ -196,20 +196,19 @@
       </div>
     </footer>
     <script src="/script.js"></script>
-
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
   
