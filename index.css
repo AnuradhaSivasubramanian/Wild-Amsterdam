@@ -1,6 +1,7 @@
 /*media queries*/
 /*Iphone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
 }
 
 /* ----------- Apple Watch ----------- */
@@ -19,14 +20,14 @@
 }
 
 .main_image {
-  background-image: url("/photos/jumbotron\ img.jpg");
+  background-image: url("/photos/jumbotron_index.jpg");
   background-color: #184188c9 !important;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
   height: 100vh;
-  width:100%;
+  width: 100%;
   background-blend-mode: multiply;
-  
 }
 .News {
   background-image: linear-gradient(
@@ -54,21 +55,15 @@
   font-size: 4.5em;
   justify-content: left;
   color: rgba(255, 255, 255, 0.79);
+  font-weight: 700;
 }
 
 .displayflex {
-  display: flex;
-  justify-content: center !important;
   margin-left: 10px;
-  height: 100%;
 }
 .polaroid {
+  margin-top:10vh;
   text-align: center;
-  margin-top: 13vh;
-  margin-left: 5vh;
-  overflow: hidden;
-  width: 55vh;
-  height: 65vh;
   background: rgba(224, 222, 222, 0.849);
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
 }
@@ -77,6 +72,8 @@
   margin-top: 1.5rem;
   width: 48vh;
   height: 48vh;
+  max-width: 90%;
+  min-width: 90%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
