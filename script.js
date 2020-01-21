@@ -1,6 +1,6 @@
 function myFunction() {
   var x = document.getElementById("menulinks");
-  if (x.style.visibility === "hidden") {
+  if (x.style.width === "hidden") {
     x.style.visibility = "visible";
   } else {
     x.style.visibility = "hidden";

@@ -1,21 +1,4 @@
-/*media queries*/
-/*Iphone */
-@media only screen and (min-device-width: 375px) and ( max-device-width: 812px) {
-  .text_inside_polaroid{
-    font-size:10px;
-  }
-  .fotos{
-    width:10px;
-    height:10px;
-  }
- 
-}
-
-/*Ipad*/
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
- }
-
-.main_image {
+.index_main_image {
   background-image: url("/photos/jumbotron_index.jpg");
   background-color: #184188c9 !important;
   background-repeat: no-repeat;
@@ -26,7 +9,7 @@
   background-blend-mode: multiply;
 }
 
-.News {
+.index_news {
   background-image: linear-gradient(
     -90deg,
     #184188b9,
@@ -45,38 +28,35 @@
   padding-top: 15vh;
   padding-bottom: 35px;
 }
-.what_is_on {
+.index_what_is_on {
   text-justify: center;
   margin-left: 20vh;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
-  font-size:6em;
+  font-size: 6em;
   justify-content: left;
   color: rgba(255, 255, 255, 0.79);
   font-weight: 700;
 }
 
-.displayflex {
- justify-content: center;
+.index_displayflex {
+  justify-content: center;
 }
-.polaroid {
-    margin-top:10%;
-    
+.index_polaroid {
+  margin-top: 10%;
+
   max-width: 40vh;
-  
-   min-height: 45vh;
-  
-    max-height: 55vh;
-  
+
+  min-height: 45vh;
+
+  max-height: 55vh;
 
   text-align: center;
   background: rgba(224, 222, 222, 0.849);
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
 }
 
-
-
-.fotos {
+.index_fotos {
   align-self: center;
   margin-top: 8%;
   width: 90%;
@@ -86,24 +66,23 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.text_inside_polaroid {
-  
-  font-size:4vh;
+.index_text_inside_polaroid {
+  font-size: 4vh;
   text-align: center;
   font-weight: 500;
 }
-.polaroid:hover {
+.index_polaroid:hover {
   transform: scale(1.07, 1.07);
   background-color: rgba(255, 255, 255, 0.931);
   transition: all ease 0.7s;
 }
-.polaroid:hover .fotos {
+.index_polaroid:hover .fotos {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transition: all 0.95s;
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 25px 0 rgba(0, 0, 0, 0.19);
 }
-.displayflex:hover a {
+.index_displayflex:hover a {
   text-decoration: none;
 }
 
