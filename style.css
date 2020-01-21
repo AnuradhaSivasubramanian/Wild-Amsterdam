@@ -2,11 +2,15 @@
 /*media queries*/
 /*Iphone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .positionabsolute {
+    z-index: 3;
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    margin-top: 80%;
+  }
 }
 
-/* ----------- Apple Watch ----------- */
-@media (max-device-width: 42mm) and (min-device-width: 38mm) {
-}
 /*Ipad*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 }
@@ -17,6 +21,20 @@
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+}
+
+.logo {
+  position: fixed;
+  left: 30px;
+  top: 20px;
+  font-size: 4rem;
+  color: white;
+}
+
+#logo:hover {
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  color: aqua;
 }
 
 body {
@@ -30,16 +48,27 @@ body {
 .positionfixed {
   z-index: 3;
   position: fixed;
-  overflow: hidden;
 }
 .positionabsolute {
   z-index: 3;
   position: absolute;
-  overflow: hidden;
-}
-.pointer {
   cursor: pointer;
+  margin-top: 50%;
 }
+
+#input_checkbox {
+  display: none;
+}
+.menuToggle {
+  margin-bottom: 7px;
+  z-index: 3;
+  display: block;
+  width: 6.6vh;
+  height: 1vh;
+  background-color: #cdcdcd;
+  border-radius: 3px;
+}
+
 /*menu link*/
 
 .menulinks {
@@ -67,6 +96,9 @@ body {
   transition: all ease 0.5s;
 }
 /*general classes*/
+.underline_text {
+  text-decoration: underline #184288;
+}
 
 .color_pink {
   color: #f76c6c;
@@ -75,15 +107,14 @@ body {
   font-weight: 700;
 }
 .color_blue {
-  color: #184188c9;
+  color: #184188;
 }
-.color_white span {
-  text-decoration: underline #184188c9;
-  color: #184188c9;
+.color_white {
+  color: white;
 }
 /*header*/
 .wild_amsterdam {
-  font-size: 7em;
+  font-size: 7vw;
   font-weight: 700;
   color: white;
   margin-top: 20%;
@@ -103,8 +134,7 @@ body {
 #contactus_tittle {
   text-justify: auto;
   margin-left: 8vh;
-  overflow: hidden;
-  font-size: 3em;
+  font-size: 4em;
 }
 .col-8 {
   justify-content: center;
@@ -133,11 +163,9 @@ input {
 }
 /*buttons*/
 .submit {
-  font-size: 1.5em;
   color: white;
   font-weight: 700;
   background-color: #f76c6c;
-  width: 180px;
 }
 .submit:hover {
   transform: rotate(-0.5deg) scale(1.08, 1.05);
@@ -146,15 +174,17 @@ input {
 }
 
 .button_top {
-  overflow: hidden;
   min-width: 70px;
   min-height: 70px;
   background-color: #f76c6c;
   text-align: center;
-  padding-top: 16px;
   border-radius: 20%;
+  position: relative;
+  float: right;
+  bottom: 20px;
 }
 .button_top p {
+  margin-top: 20px;
   font-weight: 700;
   font-size: 1.4em;
   color: white;
@@ -165,7 +195,7 @@ input {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0);
 }
 .button_top:hover p {
-  color: #184188d3;
+  color: aqua;
 }
 #decoration_none {
   text-decoration: none;
