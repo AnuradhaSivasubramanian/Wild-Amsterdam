@@ -20,96 +20,77 @@
     <title>Wild Amsterdam</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-2 col-md-1 offset-10 offset-md-11">
-              <figure class="positionfixed">
-                <a href="/index.html" class="logo bold" id="logo">
-                  <span class="color_pink ">w</span><span>a</span>
-                </a>
-              </figure>
+         <header>
+        <a href="#" class="logo bold "> <span class="color_pink ">w</span><span>a</span> </a>
+  
+        <nav>
+          <div id="myNav" class="overlay ">
+            <a href="javascript:void(0)" class="closebtn pointer" onclick="closeNav()"
+              >&times;</a
+            >
+  
+            <div class="overlay-content bold ">
+              <a href="/move.html" > How to move</a>
+              <a href="/places.html" >Places to go</a>
+              <a href="/aboutus.html" >About us</a>
+              <a href="#contactus">Contact us</a>
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-2 col-md-1 offset-10 offset-md-11">
-              <div class="positionabsolute" onclick="myFunction()">
-                <input type="checkbox" id="input_checkbox" />
-                <span class="menuToggle"></span>
-                <span class="menuToggle"></span>
-                <span class="menuToggle"></span>
-              </div>
-           </div>
-          </div>
-          
-            <div class="row menulinks" id="menulinks">
-              <div class=" col">
-                <p><a href="/index.html">Home</a></p>
-                <p><a href="/move.html">How to move</a></p>
-
-                <p><a href="/places.html">Places to go</a></p>
-
-                <p><a href="/aboutus.html">About us</a></p>
-                <p><a href="#contactus">Contact us</a></p>
-              </div>
-            </div>
-          
-        </div>
-      </nav>
-      <div class="jumbotron main_image" id="top">
+  
+          <span class="bold pointer menubutton" onclick="openNav()">menu</span>
+        </nav>
+      <div class="jumbotron index_main_image" id="top">
           
         <h1 class="wild_amsterdam">
           <span class="color_pink">Wild</span> Amsterdam
         </h1>
       </div>
     </header>
-    <section class="News container-fluid">
+    <section class="index_news container-fluid">
       <div class="row ">
-        <h2 class="what_is_on ">
+        <h2 class="index_what_is_on">
           <span class="underline_text">W</span>hat’<span class="color_blue">s </span> on
         </h2>
       </div>
         
-      <div class="row displayflex ">
-        <div class="polaroid   col-sm-4 col-md-3 ml-3 ">
+      <div class="row index_displayflex ">
+        <div class="index_polaroid   col-sm-3 col-md-6 col-lg-3 ml-3 ">
           <a href="/places.html">
             <img
               src="/photos/MolenSmall(2).jpg"
               alt="place_one"
-              class="fotos"
+              class="index_fotos"
               id="places"
             />
-            <p class=" text_inside_polaroid">
+            <p class=" index_text_inside_polaroid">
               Wind<span class="color_pink">mills</span>
             </p>
           </a>
         </div>
 
-        <div class="polaroid col-sm-4 col-md-3  ml-3  " >
+        <div class="index_polaroid col-sm-3 col-md-6 col-lg-3 ml-3  " >
           <a href="/move.html">
             <img
               src="/photos/bike.jpg"
               alt="place_two"
-              class="fotos"
+              class="index_fotos"
               id="transport"
             />
-            <p class=" text_inside_polaroid">
+            <p class=" index_text_inside_polaroid">
               How<span class="color_pink">to</span>Move
             </p>
          </a>
         </div>
 
-        <div class="polaroid   col-sm-4 col-md-3 ml-3   ">
+        <div class="index_polaroid   col-sm-3 col-md-6 col-lg-3 ml-3   ">
           <a href="/places.html"
             ><img
               src="/photos/Bloememmarketsmall.jpg"
               alt="place_two"
-              class="fotos"
+              class="index_fotos"
               id="About_Us"
             />
-            <p class=" text_inside_polaroid">
+            <p class=" index_text_inside_polaroid">
               Bloemen<span class="color_pink">Market</span>
             </p>
           </a>
@@ -125,12 +106,12 @@
       <div class="container">
         <div class="row">
           
-            <h2 class="color_pink col-sm-8 col-md-3" id="contactus_tittle">Contact Us</h2>
+            <h2 class="color_pink col-sm-8 col-md-12 col-lg-3" id="contactus_tittle">Contact Us</h2>
          
 
-          <div class="col-sm-9 col-md-8">
+          <div class="col-sm-9 col-md-12 col-lg-6">
             <form>
-              <p class="color_pink bold  col" id="font_size_15px">
+              <p class="color_pink bold  col-sm-9  col-md-12 col-lg-6 " id="font_size_15px">
                 Contact Wild Amsterdam
               </p>
 
@@ -164,19 +145,16 @@
      
     </section>
     <footer>
-      <div class="footer_container">
-        <div class="footer_wcs_one">
-          <p class="color_pink">Contact</p>
-          <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
-
-          <p><span class="color_pink">T </span>+33 09 72 52 63 94</p>
-        </div>
-
-        <div class="footer_wcs_two">
-          <img src="/photos/logo.png" alt="logo" />
+      <div class="footer_wcs">
+        <p class="color_pink">Contact</p>
+        <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
+        <span class="color_pink">T </span><span>+33 09 72 52 63 94</span>
+        <div>
           <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
         </div>
       </div>
+
+      <img src="/img/logo.png" />
     </footer>
     <script src="/script.js"></script>
     <script
