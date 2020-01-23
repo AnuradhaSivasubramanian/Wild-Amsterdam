@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>wildamsterdam</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="aboutus.css" />
+    <!--<link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" class="logo">
+        <span class="pink">w</span><span>a</span>
+      </a>
+
+      <!-- The overlay -->
+      <nav>
+        <div id="myNav" class="overlay">
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="/move.html">How to move</a>
+            <a href="/places.html">Places to go</a>
+            <a href="/aboutus.html">About us</a>
+            <a href="/index.html#contactus">Contact us</a>
+          </div>
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">menu</span>
+      </nav>
+      <div class="jumbotron">
+        <!--<img
+          src="https://www.pexels.com/photo/photo-of-boats-parked-on-river-2031706/"
+          alt="amsterdam"
+        />-->
+        <h1 class="headline container">
+          <span class="pink ">Wild</span><span>Amsterdam</span>
+        </h1>
+      </div>
+    </header>
+
+    <div class="weare">
+      <h4>We are</h4>
+    </div>
+
+    <section class="about_comment container ">
+      <div class="bubble">
+        <p class="bubble_text 6">
+          »We are Team Cool – fresh and cool starters of coding. Amsterdam is
+          the place of our mischief. Enjoy our favourite places!!«
+        </p>
+      </div>
+    </section>
+
+    <section class="about_members">
+      <div class="members_parent container">
+        <div class="members_child row">
+          <div class="members_item col">
+            <img src="/img/IMG_20200113_135935_1.jpg" alt="" />
+          </div>
+          <div class="members_item col card">
+            <p class="pink">Aigul Imaralieva</p>
+            <a href="https://www.linkedin.com/in/aigul-imaralieva-70a43a155/"
+              >LinkedIn</a
+            >
+            <a class="btn-floating btn-lg btn-li" type="button" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.linkedin.com/">Instagram</a>
+          </div>
+        </div>
+
+        <div class="members_child row">
+          <div class="members_item col">
+            <img src="/img/IMG_20200113_135953_1.jpg" alt="girl-from-google" />
+          </div>
+          <div class="members_item col card">
+            <p class="pink">Anuradha Sivasubramanian</p>
+            <a
+              href="https://www.linkedin.com/in/anuradha-sivasubramanian-5602a7179/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://github.com/AnuradhaSivasubramanian" target="_blank"
+              >Github</a
+            >
+          </div>
+        </div>
+
+        <div class="members_child row">
+          <div class="members_item col">
+            <img src="/img/IMG_20200116_114927_1.jpg" alt="" />
+          </div>
+          <div class="members_item col card">
+            <p class="pink">Lígia Souza</p>
+            <a
+              href="https://www.linkedin.com/in/anuradha-sivasubramanian-5602a7179/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://www.instagram.com/lioliveiraz/" target="_blank"
+              >Instagram</a
+            >
+            <a href="https://github.com/lioliveiraz" target="_blank">Github</a>
+          </div>
+        </div>
+
+        <div class="members_child row">
+          <div class="members_item col">
+            <img src="/img/IMG_20200120_150530_1.jpg" alt="" />
+          </div>
+          <div class="members_item col card">
+            <p class="pink">Birte Spreuer</p>
+            <a href="https://www.linkedin.com/in/birte-spreuer/" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://www.instagram.com/birte_spreuer/" target="_blank"
+              >Instagram</a
+            >
+            <a href="https://github.com/birtman" target="_blank">Github</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact_us contact_bg" id="contactus">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <h2 class="color_pink" id="contactus_tittle">Contact Us</h2>
+          </div>
+
+          <div class="col-8 container">
+            <form class="about_form">
+              <p class="color_pink bold" id="about_font_size_15px">
+                Contact Wild Amsterdam
+              </p>
+              <input
+                class="your_name col"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input class="email col" type="email" placeholder="Your Email" />
+              <textarea
+                class="about_message col"
+                placeholder="Your Message"
+              ></textarea>
+              <input class="about_submit bold col-3" type="submit" />
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-11"></div>
+          <div class="col-1">
+            <div class="about_top">
+              <a
+                href="#top"
+                class="glyphicon glyphicon-chevron-up"
+                id="decoration_none"
+              >
+                <div class="button_top">
+                  <p>Top</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_wcs">
+        <p class="pink">Contact</p>
+        <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
+        <span class="pink">T </span><span>+33 09 72 52 63 94</span>
+        <div>
+          <a href="https://www.wildcodeschool.com" target="blank"
+            >Visit wildcodeschool</a
+          >
+        </div>
+      </div>
+
+      <img src="/img/logo.png" />
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/70be1a3c92.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="//code.jquery.com/jquery-latest.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="/aboutus.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

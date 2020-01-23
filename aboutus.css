@@ -1,0 +1,641 @@
+body {
+  font-weight: 700;
+  background-color: #03205a;
+}
+
+/*HEADER*/
+
+.jumbotron {
+  background-image: url("/img/pexels-photo-1414467.jpeg");
+  background-color: #184288;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  display: flex;
+}
+
+.headline {
+  color: white;
+  font-size: 10vw;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.pink {
+  color: #f76c6c;
+}
+
+/*CONTACT US*/
+
+#about_font_size_15px {
+  font-size: 15px;
+  margin-top: 10vh;
+}
+.contact_us {
+  margin-top: 20vh;
+  margin-bottom: 40px;
+  color: black;
+}
+
+#contactus_tittle {
+  text-justify: auto;
+  margin-left: 8vh;
+  overflow: hidden;
+  font-size: 2em;
+  margin-top: 87px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  #contactus_tittle {
+    text-justify: auto;
+    margin-left: 2vh;
+    overflow: hidden;
+    font-size: 3em;
+    margin-top: 2em;
+  }
+}
+
+.col-8 .container {
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100vh;
+  height: 10vh;
+  background-color: rgba(243, 192, 192, 0.3);
+  border-radius: 5px;
+  display: block;
+}
+.your_name,
+.email,
+.about_message,
+.about_submit {
+  margin-top: 7px;
+  border: 0.5px solid pink;
+  padding-left: 5px;
+}
+
+.message {
+  width: 100vh;
+  height: 30vh;
+  background-color: rgba(243, 192, 192, 0.3);
+}
+
+/*BUTTONS*/
+
+.about_submit {
+  font-size: 1em;
+  color: white;
+  text-transform: bold;
+  background-color: #f76c6c;
+  width: 60vw;
+  min-width: 200px;
+  margin-bottom: 10vh;
+}
+.about_submit:hover {
+  transform: rotate(-0.5deg) scale(1.08, 1.05);
+  transition: all 0.15s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button_top {
+  overflow: hidden;
+  min-width: 70px;
+  min-height: 70px;
+  background-color: #f76c6c;
+  text-align: center;
+  padding-top: 16px;
+  border-radius: 20%;
+}
+.button_top p {
+  font-weight: 700;
+  font-size: 1.4em;
+  color: white;
+  text-decoration: none;
+}
+.button_top:hover {
+  transition: all ease 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0);
+}
+.button_top:hover p {
+  color: #184188d3;
+}
+#about_decoration_none {
+  text-decoration: none;
+}
+
+.contactus {
+  background-color: white;
+  height: 50vw;
+  margin-top: 10vw;
+}
+
+@media (max-width: 767.98px) {
+  .contactus {
+    height: 100vw;
+    flex-direction: column;
+    padding-bottom: 500px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .col-4 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .col-8 {
+    flex: 3 0 33.33%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mr-5,
+  .mx-5 {
+    margin-right: 0rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contactus h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contactus .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+
+.contactus .row {
+  height: 400px;
+  background: white;
+  padding: 7%;
+  margin: auto;
+}
+
+h2 {
+  color: #f76c6c;
+  margin-top: 6%;
+  font-weight: 700;
+  margin-left: 5%;
+}
+
+form .row {
+  flex-direction: column;
+}
+
+@media (max-width: 767.98px) {
+  .contactus .row {
+    flex-direction: row;
+    padding: 0%;
+  }
+}
+
+.your_name {
+  background-color: #fff7f7;
+}
+
+.email {
+  background-color: #fff7f7;
+}
+
+.submit {
+  background-color: #f76c6c;
+  margin-top: 50px;
+  border-radius: 0px;
+  border-style: none;
+}
+
+.about_message {
+  background-color: #fff7f7;
+  border-color: #f76c6c;
+  height: 30vh;
+}
+
+#contactus {
+  background-color: white;
+}
+
+.about .submit {
+  font-size: 1rem;
+}
+
+.about_top {
+  position: relative;
+  float: right;
+  bottom: 20px;
+}
+
+/*BUBBLE*/
+
+.bubble {
+  position: relative;
+  background: #f76c6c;
+  box-shadow: 0px 4px 33px rgba(247, 108, 108, 0.41);
+}
+
+.bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 36px solid transparent;
+  border-top-color: #f76c6c;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -18px;
+  margin-bottom: -100px;
+}
+
+@media (max-width: 767.98px) {
+  .bubble:after {
+    margin-bottom: -100px;
+  }
+}
+
+.about_comment {
+  background-color: #f76c6c;
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 3rem;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+@media (max-width: 767.98px) {
+  .about_comment {
+    font-size: 2rem;
+    margin-bottom: 20vw;
+  }
+}
+
+/*WE ARE*/
+
+.members_child .card {
+  border-style: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 33px rgba(247, 108, 108, 0.41);
+  height: 200px;
+}
+
+.members_child .card a:hover {
+  text-decoration: none;
+  color: #f76c6c;
+}
+
+.members_child a {
+  color: #03205a;
+  font-size: 0.9rem;
+}
+
+.members_item img {
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 33px rgba(247, 108, 108, 0.41);
+  background-color: #f76c6c;
+  background-blend-mode: multiply;
+}
+
+@media (max-width: 576px) {
+  .members_item img {
+    height: 225px;
+  }
+}
+
+.members_item {
+  justify-content: center;
+  padding-left: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .members_item {
+    padding-left: 0px;
+    margin: 5vw;
+  }
+}
+
+.members_item p {
+  position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .members_item p {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .members_item a {
+    margin-left: 20px;
+  }
+}
+
+.members_item p:after {
+  content: "";
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+  background-color: #f76c6c;
+  position: absolute;
+  top: 23px;
+  left: 1px;
+}
+
+.members_child {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
+}
+
+.members_parent {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .members_child {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    padding-top: 5%;
+  }
+}
+
+.about_members {
+  background: #ffffff;
+  box-shadow: 0px 4px 33px rgba(247, 108, 108, 0.41);
+  padding: 7%;
+  width: 90vw;
+  margin: auto;
+}
+
+@media (max-width: 767.98px) {
+  .about_members {
+    padding: 0%;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .col-6 {
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+    height: 300px;
+    padding-bottom: 10%;
+  }
+}
+
+h4 {
+  color: #f76c6c;
+  font-weight: 700;
+  margin-left: 10vw;
+  font-size: 8rem;
+  margin-top: 10vw;
+  position: relative;
+}
+
+h4:after {
+  content: "";
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 14px;
+  background-color: #f76c6c;
+  position: absolute;
+  top: 131px;
+  left: 1px;
+}
+
+@media (max-width: 767.98px) {
+  h4:after {
+    top: 155px;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #03205a;
+  height: 60vh;
+  position: relative;
+}
+
+.footer_wcs {
+  color: #ffffff;
+  left: 10vw;
+  position: absolute;
+  top: 8vh;
+  max-width: 30%;
+}
+
+@media (max-width: 576px) {
+  .footer_wcs {
+    max-width: 80%;
+  }
+}
+
+.footer_wcs p {
+  font-size: 0.9rem;
+}
+
+.footer_wcs span {
+  font-size: 0.9rem;
+}
+
+.footer_wcs p:nth-child(1) {
+  font-size: 2rem;
+}
+
+footer img {
+  right: 10vw;
+  position: absolute;
+  top: 10vh;
+  max-width: 200px;
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  footer img {
+    right: 40px;
+    top: 294px;
+    display: none;
+  }
+}
+
+footer a {
+  color: #f76c6c;
+  position: absolute;
+  top: 200px;
+}
+
+footer a:hover {
+  box-shadow: 0px 4px 33px rgba(247, 108, 108, 0.41);
+  position: absolute;
+  text-decoration: none;
+  background-color: #03205a;
+  color: #f76c6c;
+}
+
+.line {
+  content: "";
+  color: #f76c6c;
+  border: 0.5px;
+  width: 90vw;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  position: fixed;
+  left: 30px;
+  top: 20px;
+  font-size: 4rem;
+  color: white;
+  z-index: 20000;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  color: aqua;
+}
+
+.members_child .row .container {
+  justify-content: center;
+  margin: auto;
+}
+
+/*general classes*/
+
+.color_pink {
+  color: #f76c6c;
+}
+.bold {
+  font-weight: 700;
+}
+.color_blue {
+  color: #184188c9;
+}
+.color_white span {
+  text-decoration: underline #184188c9;
+  color: #184188c9;
+}
+
+/*NAV*/
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #f76c6c; /* Black fallback color */
+  background-color: #f76c6c; /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 20%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  text-decoration: none;
+  line-height: 1.2em;
+  text-align: left;
+  margin-left: 10vw;
+  font-size: 7vw;
+  color: #03205a;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+  padding-left: 50px;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 20px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+nav span {
+  position: fixed;
+  font-size: 34px;
+  right: 38px;
+  top: 40px;
+  color: #f76c6c;
+}
+
+nav span:hover {
+  color: white;
+  transition: ease 0.5s;
+}
