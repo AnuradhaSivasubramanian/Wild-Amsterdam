@@ -54,9 +54,9 @@
 .menubutton {
   cursor: pointer;
   position: absolute;
-  top: 40px;
+  top: 4.7vh;
   right: 5%;
-  font-size: 40px;
+  font-size: 2.3em;
   text-shadow: 0 0 7px #03205a;
 }
 .closebtn {
@@ -94,9 +94,9 @@ nav span:hover {
   position: fixed;
   left: 30px;
   top: 20px;
-  font-size: 4rem;
+  font-size: 3.5em;
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 7px #03205a;
+  text-shadow: 0 0 9px #03205a;
 }
 
 #logo:hover {
@@ -141,7 +141,6 @@ body {
   font-weight: 700;
   color: white;
   margin-top: 20%;
-  text-justify: block;
 }
 @media screen and (max-width: 400px) and (max-height: 640px) {
   .map {
@@ -178,7 +177,7 @@ body {
 #contactus_tittle {
   text-justify: auto;
   margin-left: 8vh;
-  font-size: 4em;
+  font-size: 3.7em;
 }
 .col-8 {
   justify-content: center;
@@ -346,7 +345,7 @@ footer a:hover {
   padding-bottom: 35px;
 }
 .index_what_is_on {
-  text-justify: center;
+  text-justify: auto;
   margin-left: 20vh;
   font-family: "Poppins", sans-serif;
   font-size: 6em;
@@ -362,7 +361,7 @@ footer a:hover {
 @media screen and (max-width: 900px) {
   .index_what_is_on {
     margin-left: 20%;
-    font-size: 6em;
+    font-size: 5em;
   }
 }
 
@@ -395,10 +394,17 @@ footer a:hover {
 }
 
 .index_text_inside_polaroid {
-  font-size: 3vh;
+  margin-bottom: auto;
+  font-size: 2em;
   text-align: center;
   font-weight: 500;
 }
+@media screen and (max-width: 400px) {
+  .index_text_inside_polaroid {
+    font-size: 1.6em;
+  }
+}
+
 .index_polaroid:hover {
   transform: scale(1.07, 1.07);
   background-color: rgba(255, 255, 255, 0.931);
