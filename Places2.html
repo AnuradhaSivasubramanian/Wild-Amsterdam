@@ -21,7 +21,7 @@
   <body class="test_footer">
     <div class="container_all">
   <header>
-    <a href="/index.html" class="logo bold " id="logo"> <span class="color_pink ">w</span><span>a</span> </a>
+    <a href="/index.html" class="logo bold pointer" id="logo"> <span class="color_pink ">w</span><span>a</span> </a>
 
     <nav>
       <div id="myNav" class="overlay ">
@@ -34,6 +34,7 @@
           <a href="/Places2.html" >Places to go</a>
           <a href="/aboutus.html" >About us</a>
           <a href="#contactus">Contact us</a>
+          
         </div>
       </div>
 
@@ -50,17 +51,30 @@
       
       
         <div class="row">
-          <div class="place_sec  col-8 offset-lg-1">
+          <div class="place_sec  col-8  col-lg-4  offset-lg-1">
             
-            <img src="photos/rijksmuseum2.jpg" alt="rijksmuseum" class="place_photo" />
+            <img srcset="/Small/rijksmuseum2_small.jpg 200w,
+            /photos/rijksmuseum2.jpg 450w "
+            sizes ="(max-width:800px) 200px,
+            450px"
+
+            src="/photos/rijksmuseum2.jpg"
+            
+            alt="rijksmuseum" class="place_photo" />
             <h3 class="topicname">Rijksmuseum</h3>
-              <p class="place_text">The Rijksmuseum is one of Amsterdam’s grandest and most popular museums. Its vast collection showcases iconic art and a wide variety of artefacts that reflect more than 800 years of Dutch and global history, including jaw dropping paintings by the likes of Rembrandt, Van Gogh and countless more Dutch greats.</p>
+              <p class="place_text">One of the world's most famous museums it is placed here, in Amsterdam. Rijksmuseum has a  vast collection that reflects more than 800 years of history. You can see famous Dutch artists such as  Rembrandt and Van Gogh, and their most popular works of art.</p>
             
             
           </div>
-          <div class="place_sec col-8 offset-lg-2">
+          <div class="place_sec col-8  col-lg-4 offset-lg-2">
             
-            <img src="photos/van_gogh.jpg" alt="vangogh" class="place_photo" />
+            <img 
+            srcset="/Small/van_gogh_small.jpg 200w,
+            photos/van_gogh.jpg 450w  "
+            sizes ="(max-width:800px) 200px,
+            450px "
+            src="photos/van_gogh.jpg" 
+            alt="vangogh" class="place_photo" />
             <h3 class="topicname">Van Gogh Museum</h3>
               <p class="place_text">The Van Gogh Museum is a Dutch art museum dedicated to the works of Vincent van Gogh and his contemporaries in Amsterdam; it is located at the Museum Square in the borough Amsterdam South, close to the Stedelijk Museum, the Rijksmuseum, and the Concertgebouw.</p>
 
@@ -69,16 +83,25 @@
         </div>
 
         <div class="row">
-          <div class="place_sec  col-8 offset-lg-1">
+          <div class="place_sec  col-8 col-lg-4  offset-lg-1">
             
-            <img src="photos/anna_frank.jpg" alt="frankhouse" class="place_photo" />
+            <img srcset="/Small/anna_frank_small.jpg 200w,
+            photos/anna_frank.jpg 450w "
+            sizes ="(max-width:800px) 200px,
+            450px"
+             src="/photos/anna_frank.jpg" alt="frankhouse" class="place_photo" />
             <h3 class="topicname">Anne Frank House</h3>
               <p class="place_text">The Anne Frank House is a writer's house and biographical museum dedicated to Jewish wartime diarist Anne Frank. The building is located on a canal called the Prinsengracht, close to the Westerkerk, in central Amsterdam in the Netherlands.</p>
             
           </div>
-          <div class="place_sec col-8 offset-lg-2">
+          <div class="place_sec col-8 col-lg-4  offset-lg-2">
             
-            <img src="photos/flower.jpg" alt="bloem" class="place_photo"/>
+            <img srcset="/Small/flower_small.jpg 200w,
+            photos/flower.jpg 450w "
+            sizes ="(max-width:800px) 200px,
+            450px"
+            
+            src="photos/flower.jpg" alt="bloem" class="place_photo"/>
             <h3 class="topicname">Bloemenmarkt</h3>
               <p class="place_text">The Bloemenmarkt was the world's only floating flower market. Founded in 1862, it is sited in Amsterdam, Netherlands, on the Singel River between Muntplein and Koningsplein in the city's southern canal belt. It has 15 souvenir and gift shops, with only a few still selling fresh flowers.</p>
             
@@ -86,34 +109,56 @@
         </div>
 
         <div class="row">
-          <div class="place_sec col-8 offset-lg-1">
+          <div class="place_sec col-8 col-lg-4  offset-lg-1">
             
-            <img src="photos/nemo.jpg" alt="nemo" class="place_photo"/>
+            <img srcset="/Small/nemo_small.jpg 200w,
+            photos/nemo.jpg 450w "
+            sizes ="(max-width:800px) 200px,
+            450px" 
+            
+            src="photos/nemo.jpg" alt="nemo" class="place_photo"/>
             <h3 class="topicname">NEMO Science Museum</h3>
               <p class="place_text">NEMO Science Museum is a science centre in Amsterdam, Netherlands. It is located in the Oosterdokseiland neighbourhood in the Amsterdam-Centrum borough, situated between the Oosterdokseiland and the Kattenburg. The museum has its origins in 1923, and is housed in a building designed by Renzo Piano since 1997.</p>
             
           </div>
-          <div class="place_sec col-8 offset-lg-2">
+          <div class="place_sec col-8 col-lg-4 offset-lg-2">
             
-            <img src="photos/adam_tower.jpg" alt="tower" class="place_photo"/>
+            <img srcset="/Small/adam_tower_small.jpg 200w,
+            photos/adam_tower.jpg 450w "
+            sizes ="(max-width:800px) 200px,
+            450px" 
+                       
+            src="photos/adam_tower.jpg" alt="tower" class="place_photo"/>
             <h3 class="topicname">A'DAM Tower</h3>
             <p class="place_text">The new 360° panorama rooftop! Swing, Bar, Amsterdam exhibition and more. Our brand new swing is ready to rock. Best view of Amsterdam. Newest A'dam Highlight. Interactive exhibition. On top of the A'DAM Tower. €2 Online Discount. Highest Swing in Europe.</p>
             
           </div>
         </div>
         <div class="row">
-          <div class="place_sec col-8 offset-lg-1">
+          <div class="place_sec col-8 col-lg-4  offset-lg-1">
             
-            <img src="photos/zoo.jpg" alt="zoo" class="place_photo"/>
+            <img srcset="Small/zoo_small.jpg 200w,
+            photos/zoo.jpg 450w "
+            sizes ="(max-width:800px) 200px,
+            450px" 
+                       
+            
+            src="photos/zoo.jpg" alt="zoo" class="place_photo"/>
             <h3 class="topicname">Zoo</h3>
             <p class="place_text">Artis, short for Natura Artis Magistra, is a zoo in the centre of Amsterdam. It is the oldest zoo in the Netherlands and one of the oldest zoos of mainland Europe. In addition to the zoo, Artis also contains an aquarium and a planetarium. Artis also has an arboretum and a fairly large art collection.</p>
             
           </div>
-          <div class="place_sec col-8 offset-lg-2">
+          <div class="place_sec col-8 col-lg-4  offset-lg-2">
             
-            <img src="photos/windmills.jpg" alt="windmills" class="place_photo"/>
+            <img srcset="/Small/windmills_small.jpg 200w,
+            photos/windmills.jpg 450w "
+            sizes ="(max-width:800px) 200px,
+            450px" 
+                    
+                    
+            src="/Small/windmills_small.jpg" alt="windmills" class="place_photo"/>
             <h3 class="topicname">Windmills</h3>
-              <p class="place_text">The Zaanse Schans is a residential area in which the 18th and 19th centuries are brought to life. Stroll past the bakery museum and enjoy the smell of fresh cookies, or take a look at the warehouse where clogs are made. You should be sure not to miss the cheese factory, pewter foundry and the various windmills. The Zaanse Schans is a unique part of the Netherlands, full of wooden houses, mills, barns and workshops.</p>
+              <p class="place_text">The Zaanse Schans is a residential area in which the 18th and 19th centuries are brought to life. Stroll past the bakery museum and enjoy the smell of fresh cookies, or take a look at the warehouse where clogs are made. You should be sure not to miss the cheese factory, pewter foundry and the various windmills.</p>
             
           </div>
         
