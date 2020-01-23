@@ -1,98 +1,180 @@
-.h3_class {
-  font-size: 2em;
-  color: #f76c6c;
-  font-weight: 700;
-  padding-top: 5vh;
+.move_image {
+  background-image: url("photos/jumbotrom_move.jpg") !important;
+  background-color: #f76c6c !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vw;
+  width: 100%;
+  background-blend-mode: multiply;
 }
-.photo_desc1,
-.photo_desc2,
-.photo_desc3,
-.photo_desc4 {
+.move_wild_amsterdam {
+  font-size: 10vw;
+  font-weight: bolder;
+  color: white;
+  margin-top: 20%;
+}
+
+.move_h3_class,
+h3 {
+  font-size: 2em;
+  font-weight: bold;
   color: #f76c6c;
+  padding-top: 3vw;
+}
+@media screen and (max-width: 375px) {
+  .move_h3_class,
+  h3 {
+    font-size: 1.5em;
+  }
+}
+.move_photo_desc {
+  color: #f76c6c;
+  font-size: 3vw;
   font-weight: normal;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 0;
-  margin-left: 15%;
+  margin-left: 10%;
   transform: scaleY(0);
   transition: all 1s;
 }
-color_blue {
-  color: blue;
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .move_photo_desc {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .move_photo_desc {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 992px) {
+  .move_photo_desc {
+    font-size: 1.2em;
+  }
 }
 
 .move_section {
-  margin-top: -10%;
-  padding: 10px;
+  margin-top: -40%;
+  padding: 5px;
   box-shadow: 5px 10px 18px #f76c6c;
-  width: 60%;
+  width: 90%;
   background-color: white;
-  height: 40%;
+  height: 60%;
+}
+/*for laptops - move the container up*/
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+  .move_section {
+    margin-top: -30%;
+    width: 80%;
+    padding: 10px;
+  }
+}
+@media (min-width: 1150px) {
+  .move_section {
+    margin-top: -15%;
+    width: 60%;
+    padding: 10px;
+  }
 }
 
-.blog_photo1,
-.blog_photo2,
-.blog_photo3,
-.blog_photo4 {
+.move_blog_photo {
   position: relative;
   transform: scaleY(1);
   transition: all 1s;
   max-width: 150%;
+  padding: 5px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .move_blog_photo {
+    width: 110%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .move_blog_photo {
+    width: 120%;
+  }
+}
+#contactus_title {
+  text-justify: auto;
+
+  font-size: 3em;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #contactus_title {
+    font-size: 3em;
+  }
 }
 
-.bike_section:hover .blog_photo1 {
+.movesub_section:hover .move_blog_photo {
   transform: scaleX(0);
   transition: all 1s;
 }
-.bike_section:hover .photo_desc1 {
+.movesub_section:hover .move_photo_desc {
   position: absolute;
   text-align: left;
-  top: 20%;
+  top: 30%;
   width: 100%;
   left: 0;
   transform: scaleY(1);
   transition: all 1s;
 }
 
-.tram_section:hover .blog_photo2 {
-  transform: scaleX(0);
-  transition: all 1s;
+.button_top_move {
+  width: 70px;
+  height: 70px;
+  background-color: #f76c6c;
+  text-align: center;
+  border-radius: 20%;
+  position: relative;
+
+  bottom: 20px;
+}
+.button_container {
+  width: 97%;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+  .button_container {
+    width: 92%;
+  }
+}
+@media screen and (min-width: 570px) and (max-width: 767px) {
+  .button_container {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 569px) {
+  .button_container {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .button_container {
+    width: 92%;
+  }
 }
 
-.tram_section:hover .photo_desc2 {
-  position: absolute;
-  text-align: left;
-  top: 20%;
-  width: 100%;
-  left: 0;
-  transform: scaleY(1);
-  transition: all 1s;
+.button_top_move p {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 1.4em;
+  color: white;
+  text-decoration: none;
 }
-.boat_section:hover .blog_photo3 {
-  transform: scaleX(0);
-  transition: all 1s;
+.button_top_move:hover {
+  transition: all ease 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0);
 }
-
-.boat_section:hover .photo_desc3 {
-  position: absolute;
-  text-align: left;
-  top: 20%;
-  width: 100%;
-  left: 0;
-  transform: scaleY(1);
-  transition: all 1s;
+.button_top_move:hover p {
+  color: aqua;
 }
-.bus_section:hover .blog_photo4 {
-  transform: scaleX(0);
-  transition: all 1s;
-}
-
-.bus_section:hover .photo_desc4 {
-  position: absolute;
-  text-align: left;
-  top: 20%;
-  width: 100%;
-  left: 0;
-  transform: scaleY(1);
-  transition: all 1s;
+.container_wrap {
+  padding-bottom: 30rem;
 }

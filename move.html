@@ -20,132 +20,165 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
-  <body>
-    <header>
-      <nav class="displaynone">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-1">
-              <figure class="positionfixed">
-                <img src="https://via.placeholder.com/50" alt="Logo" />
-              </figure>
-            </div>
-            <div class="offset-10"></div>
+  <body class="test_footer">
+    <div class="container_all">
+      <header>
+        <a href="#" class="logo bold ">
+          <span class="color_pink ">w</span><span>a</span>
+        </a>
 
-            <div class="col-1">
-              <img
-                src="https://via.placeholder.com/50"
-                alt="hamburguermenu"
-                class="positionfixed"
-                onclick="myFunction()"
-              />
+        <nav>
+          <div id="myNav" class="overlay ">
+            <a
+              href="javascript:void(0)"
+              class="closebtn pointer"
+              onclick="closeNav()"
+              >&times;</a
+            >
+
+            <div class="overlay-content bold ">
+              <a href="/move.html"> How to move</a>
+              <a href="/places.html">Places to go</a>
+              <a href="/aboutus.html">About us</a>
+              <a href="#contactus">Contact us</a>
             </div>
           </div>
-          <div class="displaynone">
-            <div class="row menulinks" id="menulinks">
-              <div class=" col">
-                <p><a href="">Places</a></p>
-                <p><a href=""> Transport </a></p>
-                <p><a href="">About us</a></p>
-                <p><a href=""> Contact us</a></p>
-              </div>
-            </div>
-          </div>
+
+          <span class="bold pointer menubutton" onclick="openNav()">menu</span>
+        </nav>
+        <div class="jumbotron move_image" id="top">
+          <h1 class="move_wild_amsterdam">
+            <span class="color_blue">How </span>to move
+          </h1>
         </div>
-      </nav>
-      <div class="jumbotron main_image">
-        <h1 class="wild_amsterdam">
-          <span class="color_pink">How </span>to move
-        </h1>
-      </div>
-    </header>
-    <section class="move_section container">
-      <div class="row ">
-        <div class="bike_section col-4 offset-3 ">
-          <h3 class="h3_class">By Bike</h3>
-          <img src="photos/bike.jpg" alt="Amsterdam Bike" class="blog_photo1" />
-          <p class="photo_desc1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div class="tram_section col-4 offset-3 ">
-        <h3 class="h3_class">By Tram</h3>
-        <img src="photos/tram.jpg" alt="Amsterdam Tram" class="blog_photo2" />
-        <p class="photo_desc2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-      <div class="boat_section col-4 offset-3 ">
-        <h3 class="h3_class">By Boat</h3>
-        <img src="photos/boat.jpg" alt="Amsterdam Boat" class="blog_photo3" />
-        <p class="photo_desc3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-      <div class="bus_section col-4 offset-3 ">
-        <h3 class="h3_class">By Bus</h3>
-        <img src="photos/bus.jpg" alt="Amsterdam Bus" class="blog_photo4" />
-        <p class="photo_desc4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </div>
-    </section>
-    <section class="contact_us">
-      <div class="container-fluid">
+      </header>
+      <section class="move_section container">
         <div class="row">
-          <div class="col-4">
-            <h2 class="color_pink">Contact Us</h2>
-          </div>
-
-          <div class="col-8">
-            <form>
-              <p class="color_pink bold">Contact Wild Amsterdam</p>
-              <input class="your_name" type="text" placeholder="Your Name" />
-              <input class="email" type="email" placeholder="Your Email" />
-              <textarea class="message" placeholder="Your Message"></textarea>
-              <input class="submit bold" type="submit" />
-            </form>
+          <div class="movesub_section col-6 offset-2 col-lg-5 offset-lg-3 ">
+            <h3 class="move_h3_class">By Bike</h3>
+            <img
+              src="photos/bike.jpg"
+              alt="Amsterdam Bike"
+              class="move_blog_photo"
+            />
+            <p class="move_photo_desc">
+              For a complete dutch experience, nothing better than riding a bike
+              for a few hours on Amsterdam's canals. You can either rent a bike
+              or take a guided cycle tour. Cycling is a fantastic way to
+              discover the city, scape for the traffic and do a good work out.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <footer>
-      <div class="footer_container">
-        <div class="footer_wcs_one">
-          <p class="color_pink">Contact</p>
-          <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
-          <span class="color_pink">T </span><span>+33 09 72 52 63 94</span>
+
+        <div class="row">
+          <div class="movesub_section col-6 offset-2 col-lg-5 offset-lg-3 ">
+            <h3 class="move_h3_class">By Tram</h3>
+            <img
+              src="photos/tram.jpg"
+              alt="Amsterdam Tram"
+              class="move_blog_photo"
+            />
+            <p class="move_photo_desc">
+              The easiest way to travel around Amsterdam is by tram or metro.
+              Tram is one of the most popular public transport and can take you
+              to almost every part of the city. Many of the city's trams
+              terminate at Amsterdam Central Station, and you can check the
+              itinerary via their app.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="movesub_section col-6 offset-2 col-lg-5 offset-lg-3  ">
+            <h3 class="move_h3_class">By Boat</h3>
+            <img
+              src="photos/boat.jpg"
+              alt="Amsterdam Boat"
+              class="move_blog_photo"
+            />
+            <p class="move_photo_desc">
+              Amsterdam's charm is in its canals, the fantastic and historical
+              buildings together with intelligent structures of the dikes which
+              makes it almost impossible to go to Amsterdam and not take a boat
+              trip.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="movesub_section col-6 offset-2 col-lg-5 offset-lg-3  ">
+            <h3 class="move_h3_class">By Bus</h3>
+            <img
+              src="photos/bus.jpg"
+              alt="Amsterdam Bus"
+              class="move_blog_photo"
+            />
+            <p class="move_photo_desc">
+              Amsterdam’s buses can take you not just inside but also outside
+              the city. That is a cheap and enjoyable way to visit the most
+              distant parts of Amsterdam or head to the flower strip in spring,
+              beaches or the famous wind-mills.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact_us" id="contactus">
+        <div class="container">
+          <div class="row">
+            <h2 class="color_pink col-sm-8 col-md-3" id="contactus_title">
+              Contact Us
+            </h2>
+
+            <div class="col-sm-9 col-md-7 offset-md-1">
+              <form>
+                <p class="color_pink bold  col" id="font_size_15px">
+                  Contact Wild Amsterdam
+                </p>
+
+                <input
+                  class="your_name col"
+                  type="text"
+                  placeholder="Your Name"
+                />
+
+                <input
+                  class="email col"
+                  type="email"
+                  placeholder="Your Email"
+                />
+                <textarea
+                  class="message col"
+                  placeholder="Your Message"
+                ></textarea>
+                <input class="submit bold col-3" type="submit" />
+              </form>
+            </div>
+          </div>
+          <div class="button_container">
+            <div class="button_top_move ">
+              <a
+                href="#top"
+                class="glyphicon glyphicon-chevron-up"
+                id="decoration_none"
+              >
+                <p>Top</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer_wcs">
+        <p class="color_pink">Contact</p>
+        <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
+        <span class="color_pink">T </span><span>+33 09 72 52 63 94</span>
+        <div>
           <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
         </div>
-
-        <div class="footer_wcs_two">
-          <img src="/logo.png" alt="logo" />
-        </div>
       </div>
+
+      <img src="/img/logo.png" />
     </footer>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("menulinks");
-        if (x.style.visibility === "hidden") {
-          x.style.visibility = "visible";
-        } else {
-          x.style.visibility = "hidden";
-        }
-      }
-    </script>
+    <script src="/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
