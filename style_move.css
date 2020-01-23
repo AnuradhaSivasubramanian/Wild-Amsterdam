@@ -132,58 +132,7 @@ h3 {
   transition: all 1s;
 }
 
-.button_top_move {
-  width: 70px;
-  height: 70px;
-  background-color: #f76c6c;
-  text-align: center;
-  border-radius: 20%;
-  position: relative;
 
-  bottom: 20px;
-}
-.button_container {
-  width: 97%;
-  display: flex;
-  justify-content: flex-end;
-  height: 100%;
-  padding-bottom: 2.5rem;
-}
-@media screen and (min-width: 768px) and (max-width: 1150px) {
-  .button_container {
-    width: 92%;
-  }
-}
-@media screen and (min-width: 570px) and (max-width: 767px) {
-  .button_container {
-    width: 75%;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 569px) {
-  .button_container {
-    width: 98%;
-  }
-}
-@media screen and (min-width: 1150px) {
-  .button_container {
-    width: 92%;
-  }
-}
-
-.button_top_move p {
-  margin-top: 20px;
-  font-weight: 700;
-  font-size: 1.4em;
-  color: white;
-  text-decoration: none;
-}
-.button_top_move:hover {
-  transition: all ease 0.4s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0);
-}
-.button_top_move:hover p {
-  color: aqua;
-}
 .container_wrap {
   padding-bottom: 30rem;
 }
