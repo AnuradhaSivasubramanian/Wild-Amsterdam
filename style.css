@@ -219,7 +219,7 @@ input {
 }
 
 .message {
-  width: 100vh;
+  width: 100%;
   height: 30vh;
   background-color: rgba(243, 192, 192, 0.3);
 }
@@ -458,7 +458,7 @@ footer a:hover {
   background-color: rgba(255, 255, 255, 0.931);
   transition: all ease 0.7s;
 }
-.index_polaroid:hover .fotos {
+.index_polaroid:hover .index_fotos {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transition: all 0.95s;
@@ -747,3 +747,248 @@ h3 {
 }
 
 /*About Us*/
+.about_body {
+  font-weight: 700;
+  background-color: #03205a;
+}
+
+/*HEADER*/
+
+.about_us_jumbotron {
+  background-image: url("/img/pexels-photo-1414467.jpeg");
+  background-color: #184288;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  display: flex;
+}
+
+/*BUBBLE*/
+
+.bubble {
+  position: relative;
+  background: #f76c6c;
+  box-shadow: 0px 4px 33px rgba(247, 108, 108, 0.41);
+}
+
+.bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 36px solid transparent;
+  border-top-color: #f76c6c;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -18px;
+  margin-bottom: -100px;
+}
+
+@media (max-width: 767.98px) {
+  .bubble:after {
+    margin-bottom: -100px;
+  }
+}
+
+.about_comment {
+  background-color: #f76c6c;
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 3rem;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+@media (max-width: 767.98px) {
+  .about_comment {
+    font-size: 1.5rem;
+    margin-bottom: 20vw;
+  }
+}
+
+/*WE ARE*/
+
+.members_child .card {
+  border-style: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 33px rgba(247, 108, 108, 0.41);
+  height: 200px;
+}
+
+.members_child .card a:hover {
+  text-decoration: none;
+  color: #f76c6c;
+}
+
+.members_child a {
+  color: #03205a;
+  font-size: 0.9rem;
+}
+
+.members_item img {
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 33px rgba(247, 108, 108, 0.41);
+  background-color: #f76c6c;
+  background-blend-mode: multiply;
+}
+
+@media (max-width: 576px) {
+  .members_item img {
+    height: 180px;
+  }
+}
+
+.members_item {
+  justify-content: center;
+  padding-left: 50px;
+}
+
+@media (max-width: 576.98px) {
+  .members_item {
+    margin: 5vw;
+    padding-left: 8vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .members_item {
+    margin: 5vw;
+  }
+}
+
+.members_item p {
+  position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .members_item p {
+    margin-left: -5px;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 767.98px) {
+  .members_item a {
+    margin-left: 20px;
+  }
+}
+
+.members_item p:after {
+  content: "";
+  width: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+  background-color: #f76c6c;
+  position: absolute;
+  top: 30px;
+  left: 1px;
+}
+
+.members_child {
+  justify-content: center;
+  align-items: center;
+  margin: 3vw;
+}
+
+.members_parent {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .members_child {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.about_row {
+  justify-content: center;
+  align-items: center;
+}
+
+.about_container {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .about_container {
+    padding-top: 5%;
+  }
+}
+
+.about_members {
+  background: #ffffff;
+  box-shadow: 0px 4px 33px rgba(247, 108, 108, 0.41);
+  width: 90vw;
+  margin: auto;
+  padding:5%;
+}
+
+@media (max-width: 767.98px) {
+  .about_members {
+    padding: 0%;
+    width: 100vw;
+  }
+}
+
+h4 {
+  color: #f76c6c;
+  font-weight: 700;
+  margin-left: 10vw;
+  font-size: 8rem;
+  margin-top: 10vw;
+  position: relative;
+}
+
+h4:after {
+  content: "";
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 14px;
+  background-color: #f76c6c;
+  position: absolute;
+  top: 131px;
+  left: 1px;
+}
+
+@media (max-width: 767.98px) {
+  h4:after {
+    top: 155px;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .members_parent .about_container {
+    flex-direction: column;
+  }
+}
+
+.members_child .about_row .about_container {
+  justify-content: center;
+  margin: auto;
+}
+
+/* SOCIAL MEDIA*/
+
+.social_media {
+  color: #03205a !important;
+  height: 25px;
+  width: 25px;
+}
+
+.members_item a:hover {
+  color: #f76c6c !important;
+  text-shadow: 2px 2px 20px #f76c6c;
+}
