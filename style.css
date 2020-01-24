@@ -458,7 +458,7 @@ footer a:hover {
   background-color: rgba(255, 255, 255, 0.931);
   transition: all ease 0.7s;
 }
-.index_polaroid:hover .fotos {
+.index_polaroid:hover .index_fotos {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transition: all 0.95s;
