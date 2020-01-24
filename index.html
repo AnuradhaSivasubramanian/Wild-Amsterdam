@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Wild Amsterdam</title>
+  </head>
+  <body class="test_footer">
+    <div class="container_all">
+         <header>
+        <a href="/index.html" class="logo bold pointer " id="logo"> <span class="color_pink ">w</span><span>a</span> </a>
+  
+        <nav>
+          <div id="myNav" class="overlay ">
+            <a href="javascript:void(0)" class="closebtn pointer" onclick="closeNav()"
+              >&times;</a
+            >
+  
+            <div class="overlay-content bold ">
+              <a href="/Places2.html" >Places to go</a>
+              <a href="/move.html" > How to move</a>
+              <a href="/aboutus.html" >About us</a>
+              <a href="#contactus">Contact us</a>
+            </div>
+          </div>
+  
+          <span class="bold pointer menubutton" onclick="openNav()">menu</span>
+        </nav>
+      <div class="jumbotron index_main_image" id="top">
+          
+        <h1 class="index_wild_amsterdam">
+          <span class="color_pink">Wild</span> Amsterdam
+        </h1>
+      </div>
+    </header>
+    <section class="index_news container-fluid">
+      <div class="row ">
+        <h2 class="index_what_is_on">
+          <span class="underline_text">W</span>hat’<span class="color_blue">s </span> on
+        </h2>
+      </div>
+        
+      <div class="row index_displayflex ">
+        <div class="index_polaroid   col-sm-2 col-md-6 col-lg-3 ml-3 ">
+          <a href="/Places2.html">
+            <img
+              src="/photos/MolenSmall(2).jpg"
+              alt="place_one"
+              class="index_fotos"
+              id="places"
+            />
+            <p class=" index_text_inside_polaroid">
+              Wind<span class="color_pink">mills</span>
+            </p>
+          </a>
+        </div>
+
+        <div class="index_polaroid col-sm-2 col-md-6 col-lg-3 ml-3  " >
+          <a href="/move.html">
+            <img
+              src="/photos/bike.jpg"
+              alt="place_two"
+              class="index_fotos"
+              id="transport"
+            />
+            <p class=" index_text_inside_polaroid">
+              How<span class="color_pink">to</span>Move
+            </p>
+         </a>
+        </div>
+
+        <div class="index_polaroid   col-sm-2 col-md-6 col-lg-3 ml-3   ">
+          <a href="/Places2.html"
+            ><img
+              src="/photos/Bloememmarketsmall.jpg"
+              alt="place_two"
+              class="index_fotos"
+              id="About_Us"
+            />
+            <p class=" index_text_inside_polaroid">
+              Bloemen<span class="color_pink">Market</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155959.7648076958!2d4.903960400000002!3d52.35461899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1snl!2snl!4v1579169691979!5m2!1snl!2snl"
+      ></iframe>
+    </div>
+    <section class="contact_us" id="contactus_move">
+      <div class="container">
+        <div class="row">
+          <h2
+            class="color_pink col-sm-8 col-md-10 col-lg-3"
+            id="contactus_title"
+          >
+            Contact Us
+          </h2>
+
+          <div class="col-sm-9 col-md-10 col-lg-8">
+            <form>
+              <p class="color_pink bold  col" id="font_size_15px">
+                Contact Wild Amsterdam
+              </p>
+
+              <input
+                class="your_name col"
+                type="text"
+                placeholder="Your Name"
+              />
+
+              <input
+                class="email col"
+                type="email"
+                placeholder="Your Email"
+              />
+              <textarea
+                class="message col"
+                placeholder="Your Message"
+              ></textarea>
+              <input class="submit bold col-3" type="submit" />
+            </form>
+          </div>
+        </div>
+
+        <div class="button_container">
+          <div class="button_top_move ">
+            <a
+              href="#top"
+              class="glyphicon glyphicon-chevron-up"
+              id="decoration_none"
+            >
+              <p>Top</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <footer class="footer">
+      <div class="footer_wcs">
+        <p class="color_pink">Contact</p>
+        <p>This is the 1. project of our wildcodeschool bootcamp 2020</p>
+        <span class="color_pink">T </span><span>+33 09 72 52 63 94</span>
+        <div>
+          <a href="https://www.wildcodeschool.com">Visit wildcodeschool</a>
+        </div>
+      </div>
+
+      <img src="/img/logo.png" alt="logo" />
+    
+
+    </footer>
+    <script src="/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
